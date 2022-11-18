@@ -1,0 +1,133 @@
+.MatchStart {
+    position: absolute;
+
+    z-index: 1000000000000;
+    display: block;
+    color: white;
+    border: 2px solid white;
+    font-size: 50px;
+    text-align: center;
+    /* margin: 20px 200px; */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 50px;
+
+    animation: blinker 0.2s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.MatchEndNotFinished {
+    position: absolute;
+    top: 600px;
+}
+
+.MatchEnd {
+    position: absolute;
+
+    z-index: 1000000000000;
+    display: block;
+    color: red;
+    border: 2px solid red;
+    font-size: 50px;
+    text-align: center;
+    /* margin: 20px 200px; */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+
+    animation: blinker 1.5s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Victory {
+    color: #00ffff;
+    border: 2px solid #00ffff;
+}
+
+.Monster0_State {
+    position: absolute;
+    top: 14%;
+    left: 58%;
+    transform: translate(-55%, 0);
+
+    padding: 10px 50px;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+.Monster1_State {
+    position: absolute;
+    top: 83%;
+    left: 42%;
+    transform: translate(-45%, 0);
+
+    padding: 10px 50px;
+    border: 1px solid #00ffff;
+    color: #00ffff;
+}
+.MatchProgress {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-180%, 0);
+
+    padding: 10px 50px;
+    /* border: 1px solid #00ffff;
+    color: #00ffff; */
+}
+
+.ActionUsed {
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    padding: 0 40px;
+    height: 40px;
+    opacity: 0.3;
+    top: 100px;
+}
+
+.ActionUsed img {
+    height: 40px;
+    width: 40px;
+}
+.ActionUsed h2 {
+    margin: 0;
+    padding: 0;
+}
+.CurrMove {
+    border: 1px dashed white;
+    font-size: 50px;
+    width: 250px;
+    height: 60px;
+    margin: 3px auto;
+    opacity: 1;
+}
+.CurrMove img {
+    height: 60px;
+    width: 60px;
+}
+.Monster0_Attacks {
+    color: #ff0000;
+}
+.Monster1_Attacks {
+    color: #00ffff;
+}
+
+.Blink {
+    animation: blink 0.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.3;
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.3;
+    }
+}

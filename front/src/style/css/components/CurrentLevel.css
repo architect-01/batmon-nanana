@@ -1,0 +1,33 @@
+.CurrentLevel {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    z-index: 10000000;
+    width: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.SubSection img {
+    width: 200px;
+    height: 200px;
+}
+
+.SubSection {
+    flex: 1;
+}
+.Skill {
+    justify-content: space-around;
+    display: flex;
+    height: 30px;
+}
+
+.Skill img {
+    flex: 0.2;
+    height: 30px;
+}
+
+.Skill h3 {
+    flex: 1;
+    text-align: center;
+}

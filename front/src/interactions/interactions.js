@@ -107,7 +107,7 @@ const getProgressionInfo = async () => {
         progressNFT_Id < progressNFT_tokenCounter;
         ++progressNFT_Id
     ) {
-        const nftOwner = _state.account;
+        const nftOwner = await _contracts.progressNFT.ownerOf(progressNFT_Id);
         console.log(nftOwner);
 
         if (nftOwner == _state.account) {

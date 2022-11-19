@@ -59,3 +59,23 @@ Each monster has a unique set of skills which can be used to form sequences - gi
 ### DEMO
 
 [![Video Demo Youtube](https://img.youtube.com/vi/1Zxl5MDcgA8/0.jpg)](https://www.youtube.com/watch?v=1Zxl5MDcgA8)
+
+## Testing instructions
+
+Repo containts two sub-directories:
+
+-   `./back` - Hardhat project (for contract development/deployment)
+-   `./front` - React projet (frontend)
+
+For both sub-directories:
+
+-   `cd <subdir> && npm i` - installs the dependencies
+
+For contract compilation / development
+
+-   `cd back`
+-   `npx hardhat compile / run scripts/deploy.js ...`
+
+For starting the frontend:
+
+-   `cd front && npm start`
